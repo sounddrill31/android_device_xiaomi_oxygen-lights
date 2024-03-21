@@ -6,7 +6,7 @@ on boot
     chown system system /sys/class/leds/green/brightness
     chown system system /sys/class/leds/blue/brightness
 
-service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.xiaomi_oxygen
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.lights-service.xiaomi
     interface android.hardware.light@2.0::ILight default
     class hal
     user system
